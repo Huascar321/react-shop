@@ -31,8 +31,15 @@ module.exports = {
         ],
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(css|scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|jpg|svg|jpeg|webp)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "./public/assets/logos/[hash][ext]",
+        },
       },
     ],
   },
