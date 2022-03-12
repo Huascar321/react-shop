@@ -1,8 +1,8 @@
 import React from "react";
-import "../styles/Login.scss";
-import logo from '../../public/assets/logos/logo_yard_sale.svg';
+import "../styles/CreateAccount.scss";
+import logo from "../../public/assets/logos/logo_yard_sale.svg";
 
-const Login = () => {
+const CreateAccount = () => {
   return (
     <div className="login">
       <div className="form-container">
@@ -39,4 +39,4 @@ const Login = () => {
   );
 };
 
-export { Login };
+export { CreateAccount };
